@@ -10,7 +10,15 @@ namespace MiniShop
     {
         static void Main(string[] args)
         {
-
+            int? num = null;
+            if (num.HasValue)
+            {
+                Console.WriteLine($"int has value {num.Value}");
+            }
+            else
+            {
+                Console.WriteLine("int is nullable");
+            }
         }
     }
 }
